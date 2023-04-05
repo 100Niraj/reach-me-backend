@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 
+const cors = require('cors')
 
 dotenv.config({path: './config.env'});
 
@@ -11,7 +12,7 @@ const DB = process.env.DATABASE;
 // const PORT = process.env.PORT;
 
 
-
+app.use(cors());
 
 //add with database mongodb
 // const DB = 'mongodb+srv://nirajkumarpatel264:9060979789@cluster0.mjvnllr.mongodb.net/REACH-ME?retryWrites=true&w=majority'
