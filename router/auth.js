@@ -8,7 +8,7 @@ const bcrypt = require('bcryptjs');
 
 require('../db/data');
 const User = require("../module/userSchema");
-const Authentication = require('../middleware/authentication');
+const Authentication = require('../middleware/Authentication');
 
 router.get('/', (request, response) => {
     response.send('Hello world from router/auth NIRAJ'); ///require means response something 
